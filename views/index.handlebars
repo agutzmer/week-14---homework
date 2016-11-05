@@ -1,0 +1,35 @@
+<h1>Do it list</h1>
+
+<h3>Here's your Do It list</h3>
+
+<ul>
+  {{#each things}}
+  	<li>
+  <!--	   <p>ID: {{this.id}}</p> -->
+		<input type="checkbox" name="check" value="False"> {{this.task}}<br>
+  	</li>
+  {{/each}}
+</ul>
+
+<form action="/create" method="POST">
+	<textarea type="text" name="task"></textarea>
+
+	<button type="submit">Submit</button>
+</form>
+
+<body>
+<script>
+
+// IGNORE FOR NOW
+//function attachCheckboxHandlers() {
+//    var el = document.getElementsByName('check');
+//    console.log ("el is = ", el);
+//}
+
+
+//attachCheckboxHandlers();
+
+
+</script>
+</body>
+</html>
